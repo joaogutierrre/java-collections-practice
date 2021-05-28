@@ -1,6 +1,7 @@
 package br.com.learn;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestandoListas {
 	public static void main(String[] args) {
@@ -19,6 +20,9 @@ public class TestandoListas {
         System.out.println(cursos);
         
         System.out.println("Cursos em promoção: " + cursos.get(1));
+        
+        Collections.sort(cursos);
+        System.out.println(cursos);
 
 	}
 }
