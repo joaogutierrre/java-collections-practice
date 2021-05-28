@@ -15,6 +15,8 @@ public class TestandoListas {
         cursos.add(curso3);
         
         System.out.println(cursos);
+        cursos.remove(2);
+        System.out.println(cursos);
 
 	}
 }
