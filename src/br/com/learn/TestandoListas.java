@@ -17,6 +17,8 @@ public class TestandoListas {
         System.out.println(cursos);
         cursos.remove(2);
         System.out.println(cursos);
+        
+        System.out.println("Cursos em promoção: " + cursos.get(1));
 
 	}
 }
