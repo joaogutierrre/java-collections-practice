@@ -21,6 +21,12 @@ public class Curso{
     }
 
     public List<Aula> getAulas(){
-        return this.aulas;
+        return Collections.unmodifiableList(aulas);
     }
+    
+    public void adiciona (Aula aula) {
+    	this.aulas.add(aula);
+    }
+    
+    
 }
