@@ -20,7 +20,9 @@ public class TestaCurso2 {
 	    Collections.sort(aulas);
 	    System.out.println(aulas);
 	    
-	    
+	    int tempo = javaColecoes.getTempoTotal();
+	    String nome = javaColecoes.getNome();
+	    System.out.println("Curso: " + nome + ". Tempo total: " + tempo +" hrs.");
 	}
 	
 }

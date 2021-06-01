@@ -1,11 +1,13 @@
-package br.com.learn;
+	package br.com.learn;
 
 import java.util.*;
 
 public class Curso{
     private String nome;
     private String instrutor;
+    private int tempoTotal;
     private List<Aula> aulas = new LinkedList<Aula>();
+    
 
     public Curso(String nome, String instrutor){
         this.nome = nome;
@@ -26,6 +28,13 @@ public class Curso{
     
     public void adiciona (Aula aula) {
     	this.aulas.add(aula);
+    }
+    
+    public int getTempoTotal() {
+    	for (Aula aula : aulas) {
+			tempoTotal += aula.getTempo();
+		}
+    	return tempoTotal;
     }
     
     
