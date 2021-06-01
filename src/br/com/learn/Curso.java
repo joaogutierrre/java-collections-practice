@@ -34,5 +34,16 @@ public class Curso{
     	return this.aulas.stream().mapToInt(Aula::getTempo).sum();
     }
     
+    @Override
+    public String toString() {
+    	// TODO Auto-generated method stub
+    	return "[Curso: "
+    			+ this.getNome() +
+    			". Tempo total: "
+    			+ this.getTempoTotal() + 
+    			". Aulas: " 
+    			+ this.getAulas() ; 
+    }
+    
     
 }
