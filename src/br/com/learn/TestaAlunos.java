@@ -38,6 +38,17 @@ public class TestaAlunos {
 		for (String aluno : alunos) {
 			System.out.println(aluno);
 		}
+		System.out.println(alunos.size());
+		System.out.println("------------------");
 		
+		//try to add look alike string element on the set (which is not equal)
+		
+		boolean add2 = alunos.add("g. guskol");
+		System.out.println("g. guskol foi add no set?" + add2);
+		for (String aluno : alunos) {
+			System.out.println(aluno);
+		}
+		System.out.println(alunos.size());
+		System.out.println("------------------");
 	}
 }
