@@ -32,5 +32,12 @@ public class TestaAlunos {
 		System.out.println(alunos.size());
 		System.out.println("------------------");
 		
+		//try to add the same string element on the set
+		boolean add = alunos.add("G. Guskol");
+		System.out.println("G. Guskol foi add no set? " + add);
+		for (String aluno : alunos) {
+			System.out.println(aluno);
+		}
+		
 	}
 }
