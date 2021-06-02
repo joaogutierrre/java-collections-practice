@@ -15,10 +15,17 @@ public class TestaAlunos {
 		alunos.add("Sara");
 		alunos.add("Rodrigo");
 		alunos.add("G. Guskol");
-		
+
+		//display the set elements
 		for (String aluno : alunos) {
 			System.out.println(aluno);
 		}
-
+		
+		//tryna add the same strings
+		
+		alunos.add("Bibiela");
+		alunos.add("Sara");
+		alunos.add("Rodrigo");
+		alunos.add("G. Guskol");
 	}
 }
