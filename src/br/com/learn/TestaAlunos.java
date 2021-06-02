@@ -27,5 +27,10 @@ public class TestaAlunos {
 		alunos.add("Sara");
 		alunos.add("Rodrigo");
 		alunos.add("G. Guskol");
+		
+		//display set size
+		System.out.println(alunos.size());
+		System.out.println("------------------");
+		
 	}
 }
