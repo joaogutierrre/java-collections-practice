@@ -44,6 +44,11 @@ public class Curso{
     			". Aulas: " 
     			+ this.getAulas() ; 
     }
+
+	public void matricula(Aluno aluno) {
+		this.alunos.add(aluno);
+		
+	}
     
     
 }
