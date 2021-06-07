@@ -5,7 +5,6 @@ import java.util.*;
 public class Curso {
 	private String nome;
 	private String instrutor;
-	private int tempoTotal;
 	private List<Aula> aulas = new LinkedList<Aula>();
 	private Set<Aluno> alunos = new HashSet<>();
 
@@ -36,7 +35,6 @@ public class Curso {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return "[Curso: " + this.getNome() + ". Tempo total: " + this.getTempoTotal() + ". Aulas: " + this.getAulas();
 	}
 

@@ -1,5 +1,4 @@
 package br.com.learn;
-import java.util.*;
 
 public class TestandoCursoComAluno {
 	public static void main(String[] args) {
