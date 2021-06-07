@@ -5,6 +5,9 @@ public class Aluno {
 	public int numeroMatricula;
 
 	public Aluno(String nomeAluno, int numeroMatricula) {
+		if(nomeAluno == null) {
+			throw new NullPointerException("nome nao pode ser null");
+		}
 		this.nomeAluno = nomeAluno;
 		this.numeroMatricula = numeroMatricula;
 	}
