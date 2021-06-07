@@ -18,6 +18,12 @@ public class Aluno {
 	}
 
 	@Override
+	public boolean equals(Object obj) {
+		Aluno outro = (Aluno) obj;
+		return this.nomeAluno.equals(outro.nomeAluno);
+	}
+
+	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "[Nome do aluno: " + this.getNomeAluno() + ". Matrícula: " + this.getMatricula();
