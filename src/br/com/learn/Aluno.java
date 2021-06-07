@@ -25,10 +25,14 @@ public class Aluno {
 		Aluno outro = (Aluno) obj;
 		return this.nomeAluno.equals(outro.nomeAluno);
 	}
+	
+	@Override
+	public int hashCode() {
+		return this.nomeAluno.hashCode();
+	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return "[Nome do aluno: " + this.getNomeAluno() + ". Matrícula: " + this.getMatricula();
 	}
 }
